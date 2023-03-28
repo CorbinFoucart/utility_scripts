@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# List .cc files
+echo "implementation files:"
+find . -type f -name "*.cc" | sed 's|^./|  |' | sort -k1,1
+echo ""
+
+# List .h files
+echo "header files:"
+find . -type f -name "*.h" | sed 's|^./|  |' | sort -k1,1
+echo ""
+
+# List .py files
+echo "python files:"
+find . -type f -name "*.py" | sed 's|^./|  |' | sort -k1,1
+echo ""
+
+# List .py files
+echo "notebook files:"
+find . -type f -name "*.ipynb" | sed 's|^./|  |' | sort -k1,1
+echo ""
+
+
